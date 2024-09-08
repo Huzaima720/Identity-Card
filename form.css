@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E0F1E7;
+}
+
+form{
+    margin: 5rem;
+    width: 50vw;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 10px; */
+    align-items: center;
+}
+
+h2{
+    font-size: 30px;
+    color: hsl(187, 24%, 22%);
+    font-weight: 800;
+   
+}
+
+.img-uploader{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #E0F1E7;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+}
+.img-uploader i{
+    z-index: 99;
+    font-size: 40px;
+   
+}
+.img-uploader img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px dashed  hsl(187, 24%, 22%);
+}
+
+.two-input-groups{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    
+}
+input[type="file"]{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 99999;
+    
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+   
+}
+
+input , select{
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid  hsl(187, 24%, 22%);
+
+}
+
+
+label{
+    color: hsl(187, 24%, 22%);
+    font-weight: 600;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(169, 82%, 27%);
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #E0F1E7 ;
+}
